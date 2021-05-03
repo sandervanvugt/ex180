@@ -9,10 +9,7 @@ spec:
         claimName: pv-claim
   containers:
     - name: pv-container
-      image: nginx
-      ports:
-        - containerPort: 80
-          name: "http-server"
+      image: bitnami/nginx
       volumeMounts:
         - mountPath: "/usr/share/nginx/html"
           name: pv-storage
