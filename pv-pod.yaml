@@ -10,8 +10,6 @@ spec:
   containers:
     - name: pv-container
       image: nginx
-      securityContext: 
-        privileged: yes
       ports:
         - containerPort: 80
           name: "http-server"
